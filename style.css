@@ -1,0 +1,330 @@
+
+/* Universal selector */
+*{
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #f0f3fa;
+}
+li{
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0%;
+}
+ul{
+    padding: 0%;
+}
+p{
+    font-family: "Albert Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Section 1 */
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    height: 100vh;
+    gap: 20px;
+    background-color: #f0f3fa;
+}
+.item1 > h1 {
+    font-size: 5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.item1 > p{
+    font-size: 1.5rem;
+    font-family: "Albert Sans", sans-serif;
+    margin-left: 20px;
+    color: rgb(138, 133, 133);
+}
+
+/* Resume Page */
+#Resume{
+    height: 100vh;
+    padding-bottom: 20px;
+}
+.items-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-evenly;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin:  0px 20px 0px 20px;
+}
+.items-image > img{
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px dotted  #d23838;
+}
+.items-image > h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: rgb(40, 38, 38);
+    font-size: 1.8rem;
+}
+.items-image > p{
+    font-family: "Albert Sans", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: rgb(138, 133, 133);
+}
+
+#item-1 p{
+    line-height: 1.8;
+}
+.item{
+    background-color: #dbdeef;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:  "Albert Sans", sans-serif;
+}
+.item > h3,p,li {
+    color: #26344b;
+}
+.item  h3 {
+    font-size: 1.5rem;
+}
+.item li > img {
+    position: relative;
+    top: 4px;
+}
+
+/* Projects */
+#Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    align-content: space-evenly;
+}
+#Projects h2{
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin: 20px;
+}
+.container-grid img{
+    border-radius: 10px;
+    object-fit: fill;
+}
+.Indian-flag,.Pricing-table{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dbdeef;
+    
+}
+.project h2{
+    margin-bottom: 30px;
+}
+.container-grid h3{
+    margin-bottom: 10px;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #26344b;
+}
+.container-grid button {
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    color: #dbdeef;
+    background-color: #26344b;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+}
+
+/* About Section */
+#Abouts {
+    height: 100%;
+    background-color: #f0f3fa;
+}
+.flex-container{
+   flex-direction: row;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: space-evenly;
+   height: 100vh;
+   margin: 20px;
+}
+.flex-item-1 > h2 {
+    font-size: 1.8rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.flex-item-1 > p {
+    font-size: 1rem;
+    font-family: "Albert Sans", sans-serif;
+    line-height: 1.5;
+    color: #26344b;
+}
+.flex-item-1 > button {
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 6px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    background-color: #26344b;
+    color: #dbdeef;
+    font-weight: 600;
+}
+/* footer section */
+.f-flex{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #dbdeef;
+   padding: 0px 20px 0px 20px;
+}
+.f-item-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.f-item-2 > ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.F-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* Tablets */
+@media (max-width: 1200px) {
+    /* Intro */
+    .intro-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    /* Resume */
+    #Resume{
+        height: 100%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+   
+     /* Projects section*/
+     .container-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    #Projects {
+        height: 100%;
+    }
+    .project h2{
+        margin-top: 20px;
+    }
+    /* About and footer Section */
+    #Abouts {
+        height: 100%;
+        background-color: #f0f3fa;
+
+    .flex-container {
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+        }
+        
+}
+}
+/* Mobile */
+@media (max-width: 500px) {
+
+    /* Intro */
+    .intro-container{
+        flex-direction: column;
+        gap: 50px;
+        height: 100%;
+    }
+    .item1 > h1 {
+        font-size: 3rem;
+    }
+    .items-image > h2 {
+        font-size: 1.5rem;
+    }
+    .item1 > p{
+        font-size: 1rem;
+    }
+    .item2 > img {
+        height: 300px;
+    }
+    #item-1 p{
+        line-height: 1.5;
+    }
+
+    /* Resume Page */
+     .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+    }
+    .items-image > img{
+        height: 200px;
+    }
+    /* Project Section */
+    #Projects h2{
+        margin-bottom: 0%;
+        font-size: 1.5rem;
+    }
+    /* About and footer Section */ 
+    .flex-item-2 > img {
+        height: 300px;
+    }
+    .f-item-2 img {
+        height: 20px;
+        border: 2px dotted #26344b;
+        border-radius: 100%;
+    }
+    .f-flex {
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .F-title {
+        font-size: .8rem;
+        margin-top: 0%;
+    }
+    .f-item-2 > ul {
+        gap: 5px;
+    }
+}
